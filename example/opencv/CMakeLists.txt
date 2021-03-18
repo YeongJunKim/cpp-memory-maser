@@ -10,5 +10,8 @@ add_compile_options(-std=c++17)
 
 include_directories(${OpenCV_INCLUDE_DIR})
 
-add_executable(opencv_example main)
-target_link_libraries(opencv_example ${OpenCV_LIBRARIES})
+add_executable(unique_main unique_main)
+target_link_libraries(unique_main ${OpenCV_LIBRARIES})
+
+add_executable(shared_main shared_main)
+target_link_libraries(shared_main ${OpenCV_LIBRARIES})
